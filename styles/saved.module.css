@@ -1,0 +1,45 @@
+.line {
+  position: relative;
+  color: rgb(46, 40, 40);
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  z-index: 1;
+  width: 85%;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 50px; */
+}
+.line h2 {
+  color: #d1aa4b;
+  text-align: center;
+  font-size: 19px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  padding: 0 30px;
+}
+
+.line h2 span {
+  background-color: #00050e;
+  padding: 0 1em;
+  position: relative;
+  margin: auto;
+  display: table;
+}
+.line h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 54%;
+  width: 100%;
+  border-bottom: 3px solid hsla(0, 0%, 100%, 0.58039);
+}
+
+.container {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}

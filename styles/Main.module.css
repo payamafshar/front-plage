@@ -1,0 +1,137 @@
+.container {
+  color: #fff;
+  /* border: 1px solid #fff; */
+  background-color: hsla(0, 0%, 100%, 0.1);
+
+  max-width: 85%;
+  display: flex;
+  margin-left: 5px;
+  justify-content: center;
+  height: 120px;
+  width: 500px;
+  min-height: 140px;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  border-radius: 5px;
+  min-height: 156px;
+  padding: 8px;
+  box-shadow: -2px 5px 10px rgba (0, 0, 0, 0.1);
+  margin: 10px 5px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.pic {
+  width: 120px;
+  height: 126px;
+  border: 1px solid rgb(107, 106, 106);
+  border-radius: 5px;
+  position: absolute;
+  right: 16px;
+}
+
+.title {
+  color: #f9f9f9;
+  position: absolute;
+  top: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.8rem;
+  right: 150px;
+}
+.text {
+  position: absolute;
+  top: 53px;
+  right: 152px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.2rem;
+  color: rgb(180, 180, 180);
+}
+
+.modality {
+  background-color: black;
+  direction: rtl;
+  align-items: center;
+}
+.mohtaviat {
+  font-size: 12px;
+  color: #d1aa4b;
+}
+.pe {
+  color: #f9f9f9;
+  font-size: 14px;
+  font-weight: 500;
+}
+.se {
+  color: #f9f9f9;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 14px;
+}
+
+.rost {
+  margin-top: 10px;
+}
+.hezar {
+  color: #d1aa4b;
+  font-size: 12px;
+  margin-right: 4px;
+}
+.titleEdit {
+  color: #d1aa4b;
+  text-align: center;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+.modalImage {
+  border-radius: 5px;
+}
+.flexer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.fake {
+  display: flex;
+  direction: rtl;
+  /* position: absolute; */
+  right: 154px;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 428px;
+  }
+  .pic {
+    width: 110px;
+    height: 117px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  .title {
+    position: absolute;
+    right: 140px;
+    top: 20px;
+  }
+  .text {
+    position: absolute;
+    top: 58px;
+    font-size: 14px;
+    right: 133px;
+  }
+}
+
+.price {
+  margin-top: 0;
+  color: #fff;
+  text-align: left;
+  font-size: 17px;
+  position: absolute;
+  bottom: 17px;
+  right: 150px;
+}
+
+.toman {
+  font-weight: bold;
+  font-size: 12px;
+}

@@ -1,0 +1,120 @@
+.container {
+  background-color: #d1aa4b;
+  height: 300px;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+}
+.gridContainer {
+  background-color: #d1aa4b;
+  height: 548px;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+}
+
+.toper {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid grey;
+  height: 65px;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-color: red;
+}
+.card::-webkit-scrollbar {
+  width: 1rem;
+  height: 10px;
+}
+.card::-webkit-scrollbar-track {
+  /* border-radius: 100vh;
+  background: #d1aa4b; */
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.card::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 100vh;
+  /* border: 1px solid #f6f7ed; */
+  /* background-color: darkgrey; */
+  outline: 1px solid #d1aa4b;
+}
+/* .card::-webkit-scrollbar-thumb:hover {
+  background: #d1aa4b;
+} */
+.flexed {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  width: 100%;
+  cursor: pointer;
+}
+.girded {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 14px;
+  margin-right: -29px;
+}
+
+.category {
+  width: 220px;
+  height: 25px;
+  /* display: flex;
+  justify-content: center; */
+  /* background-color: hsla(0, 0%, 100%, 0.12157); */
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  font-weight: 500;
+  display: hidden;
+}
+.category p {
+  position: sticky;
+  width: 220px;
+  height: 25px;
+  background-color: hsla(0, 0%, 100%, 0.12157);
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.img {
+  border-radius: 50%;
+}
+
+.dive {
+  width: 53px;
+  height: 53px;
+  margin: auto 0;
+  margin-left: 15px;
+}
+
+/* .text h4 {
+  margin-bottom: ;
+} */
+.text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  line-height: 20px;
+}
+.text p {
+  margin-bottom: 30px;
+}
+.h4 {
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+.matn {
+  font-weight: 500;
+  font-size: small;
+}
