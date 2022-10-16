@@ -85,7 +85,8 @@
 .viper {
   display: flex;
   justify-content: center;
-  margin-left: 80px;
+  width: 100%;
+  /* margin-left: 80px; */
   background-color: black;
 }
 .fake {
@@ -169,5 +170,9 @@
     display: flex;
     justify-content: center;
     margin-right: 65px;
+  }
+  .viper {
+    width: 100%;
+    margin: 0;
   }
 }
