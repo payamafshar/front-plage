@@ -8,13 +8,13 @@ export const pitza = async () => {
   return data;
 };
 
-// export const sonnatiFood = async () => {
-//   const response = await fetch(
-//     "http://localhost:5000/category/63340b5859f20747bf6907ff"
-//   );
-//   const data = response.json();
-//   return data;
-// };
+export const sonnatiFood = async () => {
+  const response = await fetch(
+    " http://plage-menew.runflare.run/category/63503fe69856441a217affcc"
+  );
+  const data = response.json();
+  return data;
+};
 export const teaHot = async () => {
   const response = await fetch(
     "http://plage-menew.runflare.run/category/6349a9d49856441a217ac37b"
@@ -22,34 +22,34 @@ export const teaHot = async () => {
   const data = response.json();
   return data;
 };
-// export const cakeAndDesser = async () => {
-//   const response = await fetch(
-//     "http://localhost:5000/category/63340b7159f20747bf690803"
-//   );
-//   const data = response.json();
-//   return data;
-// };
-// export const mainFood = async () => {
-//   const response = await fetch(
-//     "http://localhost:5000/category/63340b7f59f20747bf690805"
-//   );
-//   const data = response.json();
-//   return data;
-// };
-// export const esspersoDrink = async () => {
-//   const response = await fetch(
-//     "http://localhost:5000/category/63340b9a59f20747bf690807"
-//   );
-//   const data = response.json();
-//   return data;
-// };
-// export const choclateDrink = async () => {
-//   const response = await fetch(
-//     "http://localhost:5000/category/63340ba359f20747bf690809"
-//   );
-//   const data = response.json();
-//   return data;
-// };
+export const cakeAndDesser = async () => {
+  const response = await fetch(
+    "http://plage-menew.runflare.run/category/6350381d9856441a217afdf5"
+  );
+  const data = response.json();
+  return data;
+};
+export const mainFood = async () => {
+  const response = await fetch(
+    "http://plage-menew.runflare.run/category/6350448217f9947b0fb54617"
+  );
+  const data = response.json();
+  return data;
+};
+export const esspersoDrink = async () => {
+  const response = await fetch(
+    " http://plage-menew.runflare.run/category/63503cea9856441a217afebd"
+  );
+  const data = response.json();
+  return data;
+};
+export const choclateDrink = async () => {
+  const response = await fetch(
+    " http://plage-menew.runflare.run/category/63503ef29856441a217affae"
+  );
+  const data = response.json();
+  return data;
+};
 export const mochtailAndJoice = async () => {
   const response = await fetch(
     "http://plage-menew.runflare.run/category/6349af049856441a217ac3ed"
@@ -88,6 +88,13 @@ export const pishGhaza = async () => {
 export const sobhane = async () => {
   const response = await fetch(
     "http://plage-menew.runflare.run/category/634aeec99856441a217ac5d0"
+  );
+  const data = response.json();
+  return data;
+};
+export const shake = async () => {
+  const response = await fetch(
+    "http://plage-menew.runflare.run/category/63503a809856441a217afe9f"
   );
   const data = response.json();
   return data;

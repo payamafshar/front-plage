@@ -19,6 +19,14 @@ import {
   smooty,
   smooti,
   sobhane,
+  cake,
+  shake,
+  essperso,
+  esspersoDrink,
+  choclateDrink,
+  sonnatiFood,
+  sonnati,
+  mainFood,
 } from "../functions/fetchAPI";
 import { Link } from "react-scroll";
 import svg from "../components/assets/love.svg";
@@ -30,7 +38,6 @@ import { scroller } from "react-scroll";
 import Example from "../components/Modalb";
 export default function Home({
   pitza,
-  cake,
   pasta,
   burger,
   pGhaza,
@@ -38,6 +45,12 @@ export default function Home({
   mocktail,
   smooty,
   breakfast,
+  cakeDesser,
+  shakes,
+  essperso,
+  choclate,
+  sonnati,
+  mainG,
 }) {
   const [drawer, setDrawert] = useState(false);
 
@@ -104,9 +117,9 @@ export default function Home({
           </div>
           <div className={styles.viper}>
             <div className={styles.diver}>
-              {/* {essperso.category.product.map((item) => (
+              {mainG.category.product.map((item) => (
                 <Main key={item.id} data={item} />
-              ))} */}
+              ))}
             </div>
           </div>
         </div>
@@ -120,9 +133,9 @@ export default function Home({
           </div>
           <div className={styles.viper}>
             <div className={styles.diver}>
-              {/* {essperso.category.product.map((item) => (
+              {essperso.category.product.map((item) => (
                 <Main key={item.id} data={item} />
-              ))} */}
+              ))}
             </div>
           </div>
         </div>
@@ -136,9 +149,9 @@ export default function Home({
           </div>
           <div className={styles.viper}>
             <div className={styles.diver}>
-              {/* {data.category.product.map((item) => (
+              {choclate.category.product.map((item) => (
                 <Main key={item.id} data={item} />
-              ))} */}
+              ))}
             </div>
           </div>
         </div>
@@ -184,9 +197,9 @@ export default function Home({
           </div>
           <div className={styles.viper}>
             <div className={styles.diver}>
-              {/* {data.category.product.map((item) => (
+              {sonnati.category.product.map((item) => (
                 <Main key={item.id} data={item} />
-              ))} */}
+              ))}
             </div>
           </div>
         </div>
@@ -200,9 +213,9 @@ export default function Home({
           </div>
           <div className={styles.viper}>
             <div className={styles.diver}>
-              {/* {cake.category.product.map((item) => (
+              {cakeDesser.category.product.map((item) => (
                 <Main key={item.id} data={item} />
-              ))} */}
+              ))}
             </div>
           </div>
         </div>
@@ -216,9 +229,9 @@ export default function Home({
           </div>
           <div className={styles.viper}>
             <div className={styles.diver}>
-              {/* {data.category.product.map((item) => (
+              {shakes.category.product.map((item) => (
                 <Main key={item.id} data={item} />
-              ))} */}
+              ))}
             </div>
           </div>
         </div>
@@ -317,7 +330,9 @@ export default function Home({
             </div>
             <span>By</span>
             <div className={styles.name}>
-              <a href="https://www.lioncomputer.com/">Payam Afshari</a>
+              <a href="https://www.instagram.com/payamafshari8/?next=%2F">
+                Payam Afshari
+              </a>
             </div>
           </div>
         </div>
@@ -329,7 +344,7 @@ export default function Home({
 
 export async function getServerSideProps() {
   const pitzaFood = await pitza();
-  // const cakeDesser = await cakeAndDesser();
+  const cakeDesser = await cakeAndDesser();
   const pastaFood = await pasta();
   const burger = await americanStyle();
   const pGhaza = await pishGhaza();
@@ -337,6 +352,11 @@ export async function getServerSideProps() {
   const mocktail = await mochtailAndJoice();
   const smooty = await smooti();
   const breakfast = await sobhane();
+  const shakes = await shake();
+  const essperso = await esspersoDrink();
+  const choclate = await choclateDrink();
+  const sonnati = await sonnatiFood();
+  const mainG = await mainFood();
   return {
     props: {
       pitza: pitzaFood,
@@ -347,7 +367,12 @@ export async function getServerSideProps() {
       mocktail,
       smooty,
       breakfast,
-      // cake: cakeDesser,
+      cakeDesser,
+      shakes,
+      essperso,
+      choclate,
+      sonnati,
+      mainG,
     },
   };
 }
