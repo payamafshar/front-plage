@@ -58,8 +58,8 @@ const Main = (props) => {
                   }}
                   className={styles.modalImage}
                   src={image}
-                  width={500}
-                  height={550}
+                  width={460}
+                  height={365}
                   alt="plage"
                 />
               </Modal.Title>
