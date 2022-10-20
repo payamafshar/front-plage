@@ -743,7 +743,11 @@ function Home({ pitza , pasta , burger , pGhaza , tea , mocktail , smooty , brea
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: (Home_module_default()).viper,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    className: (Home_module_default()).diver
+                                    className: (Home_module_default()).diver,
+                                    children: pitza.category.product.map((item)=>/*#__PURE__*/ jsx_runtime_.jsx(components_Main, {
+                                            bool: drawer,
+                                            data: item
+                                        }, item.id))
                                 })
                             })
                         ]
@@ -1139,7 +1143,7 @@ function Home({ pitza , pasta , burger , pGhaza , tea , mocktail , smooty , brea
     });
 }
 async function getServerSideProps() {
-    const pitzaFood = await pitza();
+    // const pitzaFood = await pitza();
     const cakeDesser = await cakeAndDesser();
     const pastaFood = await pasta();
     const burger = await americanStyle();
