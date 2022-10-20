@@ -58,7 +58,7 @@ const Main = (props) => {
                     return image;
                   }}
                   className={styles.modalImage}
-                  src={image}
+                  src={logo}
                   width={460}
                   height={365}
                   alt="plage"

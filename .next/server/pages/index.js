@@ -324,7 +324,7 @@ const Main = (props)=>{
                                         return image;
                                     },
                                     className: (Main_module_default()).modalImage,
-                                    src: image,
+                                    src: logo,
                                     width: 460,
                                     height: 365,
                                     alt: "plage"
