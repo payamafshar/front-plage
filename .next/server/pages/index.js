@@ -320,9 +320,9 @@ const Main = (props)=>{
                                 className: (Main_module_default()).titleEdit,
                                 id: "example-custom-modal-styling-title",
                                 children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                    loader: ()=>{
-                                        return image;
-                                    },
+                                    // loader={() => {
+                                    //   return image;
+                                    // }}
                                     className: (Main_module_default()).modalImage,
                                     src: logo,
                                     width: 460,

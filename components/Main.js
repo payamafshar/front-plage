@@ -54,9 +54,9 @@ const Main = (props) => {
                 id="example-custom-modal-styling-title"
               >
                 <Image
-                  loader={() => {
-                    return image;
-                  }}
+                  // loader={() => {
+                  //   return image;
+                  // }}
                   className={styles.modalImage}
                   src={logo}
                   width={460}
