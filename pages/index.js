@@ -100,9 +100,9 @@ export default function Home({
           </div>
           <div className={styles.viper}>
             <div className={styles.diver}>
-              {pitza.category.product.map((item) => (
+              {/* {pitza.category.product.map((item) => (
                 <Main key={item.id} bool={drawer} data={item} />
-              ))}
+              ))} */}
             </div>
           </div>
         </div>
