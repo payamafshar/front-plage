@@ -87,7 +87,7 @@ export const pishGhaza = async () => {
 };
 export const sobhane = async () => {
   const response = await fetch(
-    "http://plage-menew.runflare.run/category/634aeec99856441a217ac5d0"
+    "http://plage-menew.runflare.run/category/635183a1d859c8af4edfeb9f"
   );
   const data = response.json();
   return data;

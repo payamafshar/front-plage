@@ -309,9 +309,9 @@ export default function Home({
           </div>
           <div className={styles.viper}>
             <div className={styles.diver}>
-              {/* {breakfast.category.product.map((item) => (
+              {breakfast.category.product.map((item) => (
                 <Main key={item.id} data={item} />
-              ))} */}
+              ))}
             </div>
           </div>
         </div>
@@ -343,7 +343,7 @@ export default function Home({
 }
 
 export async function getServerSideProps() {
-  // const pitzaFood = await pitza();
+  const pitzaFood = await pitza();
   const cakeDesser = await cakeAndDesser();
   const pastaFood = await pasta();
   const burger = await americanStyle();

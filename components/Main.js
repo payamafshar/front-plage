@@ -8,6 +8,7 @@ import Modal from "react-bootstrap/Modal";
 import pizza from "../components/assets/peperoni.jpg";
 import Example from "./Modalb";
 import SpringModal from "./Modalb";
+import logo from "../components/assets/logo.jpg";
 const Main = (props) => {
   const { title, text, price, image, src, id } = props.data;
   const [modal, setModal] = useState(false);
@@ -30,7 +31,7 @@ const Main = (props) => {
           //   return image;
           // }}
           unoptimized
-          src={image}
+          src={logo}
           alt="plage"
           width={130}
           height={140}

@@ -183,7 +183,7 @@ const pishGhaza = async ()=>{
     return data;
 };
 const sobhane = async ()=>{
-    const response = await fetch("http://plage-menew.runflare.run/category/634aeec99856441a217ac5d0");
+    const response = await fetch("http://plage-menew.runflare.run/category/635183a1d859c8af4edfeb9f");
     const data = response.json();
     return data;
 };
@@ -242,7 +242,10 @@ function Example({ data  }) {
 }
 /* harmony default export */ const Modalb = ((/* unused pure expression or super */ null && (Example)));
 
+;// CONCATENATED MODULE: ./components/assets/logo.jpg
+/* harmony default export */ const logo = ({"src":"/_next/static/media/logo.8d473f9d.jpg","height":1000,"width":1000,"blurDataURL":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/sBCgoKCgoKCwwMCw8QDhAPFhQTExQWIhgaGBoYIjMgJSAgJSAzLTcsKSw3LVFAODhAUV5PSk9ecWVlcY+Ij7u7+//CABEIAAgACAMBIgACEQEDEQH/xAAnAAEBAAAAAAAAAAAAAAAAAAAABgEBAAAAAAAAAAAAAAAAAAAABP/aAAwDAQACEAMQAAAAgAV//8QAGRAAAgMBAAAAAAAAAAAAAAAAEhMAI0GB/9oACAEBAAE/AKk6w+DP/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAgEBPwB//8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAwEBPwB//9k=","blurWidth":8,"blurHeight":8});
 ;// CONCATENATED MODULE: ./components/Main.js
+
 
 
 
@@ -287,7 +290,7 @@ const Main = (props)=>{
                     //   return image;
                     // }}
                     unoptimized: true,
-                    src: image,
+                    src: logo,
                     alt: "plage",
                     width: 130,
                     height: 140
@@ -373,8 +376,6 @@ const Main = (props)=>{
 // EXTERNAL MODULE: ./styles/Navbar.module.css
 var Navbar_module = __webpack_require__(469);
 var Navbar_module_default = /*#__PURE__*/__webpack_require__.n(Navbar_module);
-;// CONCATENATED MODULE: ./components/assets/logo.jpg
-/* harmony default export */ const logo = ({"src":"/_next/static/media/logo.8d473f9d.jpg","height":1000,"width":1000,"blurDataURL":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/sBCgoKCgoKCwwMCw8QDhAPFhQTExQWIhgaGBoYIjMgJSAgJSAzLTcsKSw3LVFAODhAUV5PSk9ecWVlcY+Ij7u7+//CABEIAAgACAMBIgACEQEDEQH/xAAnAAEBAAAAAAAAAAAAAAAAAAAABgEBAAAAAAAAAAAAAAAAAAAABP/aAAwDAQACEAMQAAAAgAV//8QAGRAAAgMBAAAAAAAAAAAAAAAAEhMAI0GB/9oACAEBAAE/AKk6w+DP/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAgEBPwB//8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAwEBPwB//9k=","blurWidth":8,"blurHeight":8});
 ;// CONCATENATED MODULE: ./components/assets/tea.png
 /* harmony default export */ const tea = ({"src":"/_next/static/media/tea.f52da49e.png","height":512,"width":512,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA+klEQVR42mP4//8/AyMDgwgIMzAwGLOyMIkB2ZIgcQYGoBSIYWOsqW9vqq0KxPr2ZjoaNgaq+iBxYwl2ZgaoSmEgNgJiRSDmBWIBkDgIM6SEuprsWtByevXkqmf7F7dfvrh12oEdU8ouFFvx5DIYWrMyzOwqC356ftP/E1tn//94a/f/T3f2/n91ceP/jmibgw2OQh0Maxb1uTw/v+H/wXKGP5/v7Pn7//OlPz/u7f3XHWF2aIqfdBgDAwOD1PndCx49PbYYpPvPn6fH/l/eOee1PgNDINgN2boMyXNiTX4c6s//v6U2+t/W6rDfsyO0vjkwMPj+//+fAQA1JnsNfWpivQAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 ;// CONCATENATED MODULE: ./components/assets/pizza.png
@@ -1082,7 +1083,10 @@ function Home({ pitza , pasta , burger , pGhaza , tea , mocktail , smooty , brea
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: (Home_module_default()).viper,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    className: (Home_module_default()).diver
+                                    className: (Home_module_default()).diver,
+                                    children: breakfast.category.product.map((item)=>/*#__PURE__*/ jsx_runtime_.jsx(components_Main, {
+                                            data: item
+                                        }, item.id))
                                 })
                             })
                         ]
@@ -1143,7 +1147,7 @@ function Home({ pitza , pasta , burger , pGhaza , tea , mocktail , smooty , brea
     });
 }
 async function getServerSideProps() {
-    // const pitzaFood = await pitza();
+    const pitzaFood = await pitza();
     const cakeDesser = await cakeAndDesser();
     const pastaFood = await pasta();
     const burger = await americanStyle();
