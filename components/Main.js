@@ -53,16 +53,18 @@ const Main = (props) => {
                 className={styles.titleEdit}
                 id="example-custom-modal-styling-title"
               >
-                <Image
-                  // loader={() => {
-                  //   return image;
-                  // }}
-                  className={styles.modalImage}
-                  src={logo}
-                  width={460}
-                  height={365}
-                  alt="plage"
-                />
+                <div className={styles.update}>
+                  <Image
+                    // loader={() => {
+                    //   return image;
+                    // }}
+                    className={styles.modalImage}
+                    src={logo}
+                    width={300}
+                    height={250}
+                    alt="plage"
+                  />
+                </div>
               </Modal.Title>
             </Modal.Header>
             <Modal.Body className={styles.modality}>

@@ -29,7 +29,12 @@
   position: absolute;
   right: 16px;
 }
-
+.update {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 74px;
+}
 .title {
   color: #f9f9f9;
   position: absolute;
